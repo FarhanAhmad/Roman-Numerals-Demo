@@ -32,10 +32,10 @@ Resources:
         yum install python3-pip -y
         pip3 install Flask
         cd /home/ec2-user
-        FOLDER="https://raw.githubusercontent.com/FarhanAhmad/Roman-Numerals-Demo/refs/heads/master/"
+        FOLDER="https://raw.githubusercontent.com/FarhanAhmad/Roman-Numerals-Demo/refs/heads/master"
         wget ${FOLDER}/app.py
-        wget -p templates ${FOLDER}/templates/index.html
-        wget -p templates ${FOLDER}/templates/result.html
+        wget -P templates ${FOLDER}/templates/index.html
+        wget -P templates ${FOLDER}/templates/result.html
         python3 app.py
 Outputs:
   WebServerPublicDNS:
